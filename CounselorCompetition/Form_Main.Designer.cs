@@ -46,6 +46,10 @@
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.moUI_Panel3 = new CounselorCompetition.Controls.MoUI_Panel();
+            this.TextCover_2_Job = new CounselorCompetition.Controls.MoUI_TextCover();
+            this.moUI_Label40 = new CounselorCompetition.Controls.MoUI_Label();
+            this.moUI_Label39 = new CounselorCompetition.Controls.MoUI_Label();
+            this.TextCover_2_Number = new CounselorCompetition.Controls.MoUI_TextCover();
             this.moUI_Switch15 = new CounselorCompetition.Controls.MoUI_Switch();
             this.moUI_Button3 = new CounselorCompetition.Controls.MoUI_Button();
             this.moUI_PictureBox8 = new CounselorCompetition.Controls.MoUI_PictureBox();
@@ -93,6 +97,12 @@
             this.PictureBox2_0 = new CounselorCompetition.Controls.MoUI_PictureBox();
             this.moUI_Label_Score = new CounselorCompetition.Controls.MoUI_Label();
             this.moUI_Panel1 = new CounselorCompetition.Controls.MoUI_Panel();
+            this.TextCover_1_Job = new CounselorCompetition.Controls.MoUI_TextCover();
+            this.moUI_Switch17 = new CounselorCompetition.Controls.MoUI_Switch();
+            this.moUI_Label38 = new CounselorCompetition.Controls.MoUI_Label();
+            this.moUI_Label37 = new CounselorCompetition.Controls.MoUI_Label();
+            this.moUI_Switch16 = new CounselorCompetition.Controls.MoUI_Switch();
+            this.TextCover_1_Number = new CounselorCompetition.Controls.MoUI_TextCover();
             this.PictureBox1 = new CounselorCompetition.Controls.MoUI_PictureBox();
             this.moUI_Button1 = new CounselorCompetition.Controls.MoUI_Button();
             this.moUI_Label4 = new CounselorCompetition.Controls.MoUI_Label();
@@ -243,6 +253,10 @@
             // 
             this.moUI_Panel3._BG = null;
             this.moUI_Panel3._BGColorStyle = false;
+            this.moUI_Panel3.Controls.Add(this.TextCover_2_Job);
+            this.moUI_Panel3.Controls.Add(this.moUI_Label40);
+            this.moUI_Panel3.Controls.Add(this.moUI_Label39);
+            this.moUI_Panel3.Controls.Add(this.TextCover_2_Number);
             this.moUI_Panel3.Controls.Add(this.moUI_Switch15);
             this.moUI_Panel3.Controls.Add(this.moUI_Button3);
             this.moUI_Panel3.Controls.Add(this.moUI_PictureBox8);
@@ -273,10 +287,88 @@
             this.moUI_Panel3.Controls.Add(this.TextCover_2_Address);
             this.moUI_Panel3.Controls.Add(this.TextCover_2_PoliticalStatus);
             this.moUI_Panel3.Controls.Add(this.moUI_Label32);
-            this.moUI_Panel3.Location = new System.Drawing.Point(1106, 139);
+            this.moUI_Panel3.Location = new System.Drawing.Point(1103, 139);
             this.moUI_Panel3.Name = "moUI_Panel3";
-            this.moUI_Panel3.Size = new System.Drawing.Size(34, 36);
+            this.moUI_Panel3.Size = new System.Drawing.Size(37, 64);
             this.moUI_Panel3.TabIndex = 55;
+            // 
+            // TextCover_2_Job
+            // 
+            this.TextCover_2_Job._AutoSize = true;
+            this.TextCover_2_Job._BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.TextCover_2_Job._BG = null;
+            this.TextCover_2_Job._BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.TextCover_2_Job._Font = new System.Drawing.Font("微软雅黑", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.TextCover_2_Job._HintFontColor = System.Drawing.Color.Black;
+            this.TextCover_2_Job._HintText = "显示";
+            this.TextCover_2_Job._HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.TextCover_2_Job._HoverOpacity = 0.99D;
+            this.TextCover_2_Job._IsShow = false;
+            this.TextCover_2_Job._MoUI_Switch = null;
+            this.TextCover_2_Job._NormalFontColor = System.Drawing.Color.White;
+            this.TextCover_2_Job._NormalOpacity = 0.9D;
+            this.TextCover_2_Job._Text = "职业倾向";
+            this.TextCover_2_Job.Location = new System.Drawing.Point(350, 537);
+            this.TextCover_2_Job.Name = "TextCover_2_Job";
+            this.TextCover_2_Job.Size = new System.Drawing.Size(384, 32);
+            this.TextCover_2_Job.TabIndex = 90;
+            this.TextCover_2_Job.Text = "moUI_TextCover17";
+            this.TextCover_2_Job.Click += new System.EventHandler(this.TextCover_2_Job_Click);
+            // 
+            // moUI_Label40
+            // 
+            this.moUI_Label40._AutoSize = true;
+            this.moUI_Label40._Font = new System.Drawing.Font("微软雅黑", 16F);
+            this.moUI_Label40._Text = "职业倾向";
+            this.moUI_Label40.BackColor = System.Drawing.Color.White;
+            this.moUI_Label40.BG = null;
+            this.moUI_Label40.FontColor = System.Drawing.Color.White;
+            this.moUI_Label40.HoverOpacity = 220;
+            this.moUI_Label40.IsSelected = false;
+            this.moUI_Label40.Location = new System.Drawing.Point(250, 537);
+            this.moUI_Label40.Name = "moUI_Label40";
+            this.moUI_Label40.Opacity = 200;
+            this.moUI_Label40.Size = new System.Drawing.Size(94, 30);
+            this.moUI_Label40.TabIndex = 89;
+            // 
+            // moUI_Label39
+            // 
+            this.moUI_Label39._AutoSize = true;
+            this.moUI_Label39._Font = new System.Drawing.Font("微软雅黑", 16F);
+            this.moUI_Label39._Text = "学   号";
+            this.moUI_Label39.BackColor = System.Drawing.Color.White;
+            this.moUI_Label39.BG = null;
+            this.moUI_Label39.FontColor = System.Drawing.Color.White;
+            this.moUI_Label39.HoverOpacity = 220;
+            this.moUI_Label39.IsSelected = false;
+            this.moUI_Label39.Location = new System.Drawing.Point(251, 81);
+            this.moUI_Label39.Name = "moUI_Label39";
+            this.moUI_Label39.Opacity = 200;
+            this.moUI_Label39.Size = new System.Drawing.Size(70, 30);
+            this.moUI_Label39.TabIndex = 87;
+            // 
+            // TextCover_2_Number
+            // 
+            this.TextCover_2_Number._AutoSize = true;
+            this.TextCover_2_Number._BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.TextCover_2_Number._BG = null;
+            this.TextCover_2_Number._BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.TextCover_2_Number._Font = new System.Drawing.Font("微软雅黑", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.TextCover_2_Number._HintFontColor = System.Drawing.Color.Black;
+            this.TextCover_2_Number._HintText = "显示";
+            this.TextCover_2_Number._HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.TextCover_2_Number._HoverOpacity = 0.99D;
+            this.TextCover_2_Number._IsShow = false;
+            this.TextCover_2_Number._MoUI_Switch = null;
+            this.TextCover_2_Number._NormalFontColor = System.Drawing.Color.White;
+            this.TextCover_2_Number._NormalOpacity = 0.9D;
+            this.TextCover_2_Number._Text = "学号";
+            this.TextCover_2_Number.Location = new System.Drawing.Point(334, 80);
+            this.TextCover_2_Number.Name = "TextCover_2_Number";
+            this.TextCover_2_Number.Size = new System.Drawing.Size(179, 32);
+            this.TextCover_2_Number.TabIndex = 88;
+            this.TextCover_2_Number.Text = "moUI_TextCover18";
+            this.TextCover_2_Number.Click += new System.EventHandler(this.TextCover_2_Number_Click);
             // 
             // moUI_Switch15
             // 
@@ -348,7 +440,7 @@
             this.TextCover_2_Post._NormalFontColor = System.Drawing.Color.White;
             this.TextCover_2_Post._NormalOpacity = 0.9D;
             this.TextCover_2_Post._Text = "Click Me";
-            this.TextCover_2_Post.Location = new System.Drawing.Point(350, 271);
+            this.TextCover_2_Post.Location = new System.Drawing.Point(350, 309);
             this.TextCover_2_Post.Name = "TextCover_2_Post";
             this.TextCover_2_Post.Size = new System.Drawing.Size(384, 32);
             this.TextCover_2_Post.TabIndex = 82;
@@ -388,7 +480,7 @@
             this.moUI_Label20.FontColor = System.Drawing.Color.White;
             this.moUI_Label20.HoverOpacity = 220;
             this.moUI_Label20.IsSelected = false;
-            this.moUI_Label20.Location = new System.Drawing.Point(250, 271);
+            this.moUI_Label20.Location = new System.Drawing.Point(250, 309);
             this.moUI_Label20.Name = "moUI_Label20";
             this.moUI_Label20.Opacity = 200;
             this.moUI_Label20.Size = new System.Drawing.Size(94, 30);
@@ -410,7 +502,7 @@
             this.TextCover_2_Economic._NormalFontColor = System.Drawing.Color.White;
             this.TextCover_2_Economic._NormalOpacity = 0.9D;
             this.TextCover_2_Economic._Text = "Click Me";
-            this.TextCover_2_Economic.Location = new System.Drawing.Point(394, 499);
+            this.TextCover_2_Economic.Location = new System.Drawing.Point(394, 575);
             this.TextCover_2_Economic.Name = "TextCover_2_Economic";
             this.TextCover_2_Economic.Size = new System.Drawing.Size(340, 32);
             this.TextCover_2_Economic.TabIndex = 80;
@@ -466,7 +558,7 @@
             this.moUI_Label22.FontColor = System.Drawing.Color.White;
             this.moUI_Label22.HoverOpacity = 220;
             this.moUI_Label22.IsSelected = false;
-            this.moUI_Label22.Location = new System.Drawing.Point(250, 499);
+            this.moUI_Label22.Location = new System.Drawing.Point(250, 575);
             this.moUI_Label22.Name = "moUI_Label22";
             this.moUI_Label22.Opacity = 200;
             this.moUI_Label22.Size = new System.Drawing.Size(138, 30);
@@ -482,7 +574,7 @@
             this.moUI_Label23.FontColor = System.Drawing.Color.White;
             this.moUI_Label23.HoverOpacity = 220;
             this.moUI_Label23.IsSelected = false;
-            this.moUI_Label23.Location = new System.Drawing.Point(251, 81);
+            this.moUI_Label23.Location = new System.Drawing.Point(251, 119);
             this.moUI_Label23.Name = "moUI_Label23";
             this.moUI_Label23.Opacity = 200;
             this.moUI_Label23.Size = new System.Drawing.Size(70, 30);
@@ -504,7 +596,7 @@
             this.TextCover_2_Habby._NormalFontColor = System.Drawing.Color.White;
             this.TextCover_2_Habby._NormalOpacity = 0.9D;
             this.TextCover_2_Habby._Text = "Click Me";
-            this.TextCover_2_Habby.Location = new System.Drawing.Point(350, 461);
+            this.TextCover_2_Habby.Location = new System.Drawing.Point(350, 499);
             this.TextCover_2_Habby.Name = "TextCover_2_Habby";
             this.TextCover_2_Habby.Size = new System.Drawing.Size(384, 32);
             this.TextCover_2_Habby.TabIndex = 78;
@@ -527,7 +619,7 @@
             this.TextCover_2_Class._NormalFontColor = System.Drawing.Color.White;
             this.TextCover_2_Class._NormalOpacity = 0.9D;
             this.TextCover_2_Class._Text = "获取学生集合";
-            this.TextCover_2_Class.Location = new System.Drawing.Point(334, 80);
+            this.TextCover_2_Class.Location = new System.Drawing.Point(334, 118);
             this.TextCover_2_Class.Name = "TextCover_2_Class";
             this.TextCover_2_Class.Size = new System.Drawing.Size(179, 32);
             this.TextCover_2_Class.TabIndex = 60;
@@ -544,7 +636,7 @@
             this.moUI_Label24.FontColor = System.Drawing.Color.White;
             this.moUI_Label24.HoverOpacity = 220;
             this.moUI_Label24.IsSelected = false;
-            this.moUI_Label24.Location = new System.Drawing.Point(250, 461);
+            this.moUI_Label24.Location = new System.Drawing.Point(250, 499);
             this.moUI_Label24.Name = "moUI_Label24";
             this.moUI_Label24.Opacity = 200;
             this.moUI_Label24.Size = new System.Drawing.Size(94, 30);
@@ -560,7 +652,7 @@
             this.moUI_Label25.FontColor = System.Drawing.Color.White;
             this.moUI_Label25.HoverOpacity = 220;
             this.moUI_Label25.IsSelected = false;
-            this.moUI_Label25.Location = new System.Drawing.Point(251, 119);
+            this.moUI_Label25.Location = new System.Drawing.Point(251, 157);
             this.moUI_Label25.Name = "moUI_Label25";
             this.moUI_Label25.Opacity = 200;
             this.moUI_Label25.Size = new System.Drawing.Size(70, 30);
@@ -582,7 +674,7 @@
             this.TextCover_2_Study._NormalFontColor = System.Drawing.Color.White;
             this.TextCover_2_Study._NormalOpacity = 0.9D;
             this.TextCover_2_Study._Text = "Click Me";
-            this.TextCover_2_Study.Location = new System.Drawing.Point(350, 423);
+            this.TextCover_2_Study.Location = new System.Drawing.Point(350, 461);
             this.TextCover_2_Study.Name = "TextCover_2_Study";
             this.TextCover_2_Study.Size = new System.Drawing.Size(384, 32);
             this.TextCover_2_Study.TabIndex = 76;
@@ -605,7 +697,7 @@
             this.TextCover_2_Major._NormalFontColor = System.Drawing.Color.White;
             this.TextCover_2_Major._NormalOpacity = 0.9D;
             this.TextCover_2_Major._Text = "获取学生信息_ID";
-            this.TextCover_2_Major.Location = new System.Drawing.Point(334, 118);
+            this.TextCover_2_Major.Location = new System.Drawing.Point(334, 156);
             this.TextCover_2_Major.Name = "TextCover_2_Major";
             this.TextCover_2_Major.Size = new System.Drawing.Size(179, 32);
             this.TextCover_2_Major.TabIndex = 62;
@@ -622,7 +714,7 @@
             this.moUI_Label26.FontColor = System.Drawing.Color.White;
             this.moUI_Label26.HoverOpacity = 220;
             this.moUI_Label26.IsSelected = false;
-            this.moUI_Label26.Location = new System.Drawing.Point(250, 423);
+            this.moUI_Label26.Location = new System.Drawing.Point(250, 461);
             this.moUI_Label26.Name = "moUI_Label26";
             this.moUI_Label26.Opacity = 200;
             this.moUI_Label26.Size = new System.Drawing.Size(94, 30);
@@ -638,7 +730,7 @@
             this.moUI_Label27.FontColor = System.Drawing.Color.White;
             this.moUI_Label27.HoverOpacity = 220;
             this.moUI_Label27.IsSelected = false;
-            this.moUI_Label27.Location = new System.Drawing.Point(251, 157);
+            this.moUI_Label27.Location = new System.Drawing.Point(251, 195);
             this.moUI_Label27.Name = "moUI_Label27";
             this.moUI_Label27.Opacity = 200;
             this.moUI_Label27.Size = new System.Drawing.Size(70, 30);
@@ -660,7 +752,7 @@
             this.TextCover_2_BonusAndPenalty._NormalFontColor = System.Drawing.Color.White;
             this.TextCover_2_BonusAndPenalty._NormalOpacity = 0.9D;
             this.TextCover_2_BonusAndPenalty._Text = "Click Me";
-            this.TextCover_2_BonusAndPenalty.Location = new System.Drawing.Point(350, 385);
+            this.TextCover_2_BonusAndPenalty.Location = new System.Drawing.Point(350, 423);
             this.TextCover_2_BonusAndPenalty.Name = "TextCover_2_BonusAndPenalty";
             this.TextCover_2_BonusAndPenalty.Size = new System.Drawing.Size(384, 32);
             this.TextCover_2_BonusAndPenalty.TabIndex = 74;
@@ -678,7 +770,7 @@
             this.moUI_Switch10._SwitchBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.moUI_Switch10._SwitchedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
             this.moUI_Switch10.IsSwitched = false;
-            this.moUI_Switch10.Location = new System.Drawing.Point(766, 397);
+            this.moUI_Switch10.Location = new System.Drawing.Point(766, 435);
             this.moUI_Switch10.Name = "moUI_Switch10";
             this.moUI_Switch10.Size = new System.Drawing.Size(50, 14);
             this.moUI_Switch10.TabIndex = 37;
@@ -701,7 +793,7 @@
             this.TextCover_2_Nation._NormalFontColor = System.Drawing.Color.White;
             this.TextCover_2_Nation._NormalOpacity = 0.9D;
             this.TextCover_2_Nation._Text = "Click Me";
-            this.TextCover_2_Nation.Location = new System.Drawing.Point(334, 156);
+            this.TextCover_2_Nation.Location = new System.Drawing.Point(334, 194);
             this.TextCover_2_Nation.Name = "TextCover_2_Nation";
             this.TextCover_2_Nation.Size = new System.Drawing.Size(179, 32);
             this.TextCover_2_Nation.TabIndex = 64;
@@ -718,7 +810,7 @@
             this.moUI_Label28.FontColor = System.Drawing.Color.White;
             this.moUI_Label28.HoverOpacity = 220;
             this.moUI_Label28.IsSelected = false;
-            this.moUI_Label28.Location = new System.Drawing.Point(250, 385);
+            this.moUI_Label28.Location = new System.Drawing.Point(250, 423);
             this.moUI_Label28.Name = "moUI_Label28";
             this.moUI_Label28.Opacity = 200;
             this.moUI_Label28.Size = new System.Drawing.Size(94, 30);
@@ -734,7 +826,7 @@
             this.moUI_Label29.FontColor = System.Drawing.Color.White;
             this.moUI_Label29.HoverOpacity = 220;
             this.moUI_Label29.IsSelected = false;
-            this.moUI_Label29.Location = new System.Drawing.Point(250, 195);
+            this.moUI_Label29.Location = new System.Drawing.Point(250, 233);
             this.moUI_Label29.Name = "moUI_Label29";
             this.moUI_Label29.Opacity = 200;
             this.moUI_Label29.Size = new System.Drawing.Size(73, 30);
@@ -756,7 +848,7 @@
             this.TextCover_2_DormMember._NormalFontColor = System.Drawing.Color.White;
             this.TextCover_2_DormMember._NormalOpacity = 0.9D;
             this.TextCover_2_DormMember._Text = "Click Me";
-            this.TextCover_2_DormMember.Location = new System.Drawing.Point(350, 347);
+            this.TextCover_2_DormMember.Location = new System.Drawing.Point(350, 385);
             this.TextCover_2_DormMember.Name = "TextCover_2_DormMember";
             this.TextCover_2_DormMember.Size = new System.Drawing.Size(384, 32);
             this.TextCover_2_DormMember.TabIndex = 72;
@@ -779,7 +871,7 @@
             this.TextCover_2_Dorm._NormalFontColor = System.Drawing.Color.White;
             this.TextCover_2_Dorm._NormalOpacity = 0.9D;
             this.TextCover_2_Dorm._Text = "Click Me";
-            this.TextCover_2_Dorm.Location = new System.Drawing.Point(334, 194);
+            this.TextCover_2_Dorm.Location = new System.Drawing.Point(334, 232);
             this.TextCover_2_Dorm.Name = "TextCover_2_Dorm";
             this.TextCover_2_Dorm.Size = new System.Drawing.Size(179, 32);
             this.TextCover_2_Dorm.TabIndex = 66;
@@ -796,7 +888,7 @@
             this.moUI_Label30.FontColor = System.Drawing.Color.White;
             this.moUI_Label30.HoverOpacity = 220;
             this.moUI_Label30.IsSelected = false;
-            this.moUI_Label30.Location = new System.Drawing.Point(250, 347);
+            this.moUI_Label30.Location = new System.Drawing.Point(250, 385);
             this.moUI_Label30.Name = "moUI_Label30";
             this.moUI_Label30.Opacity = 200;
             this.moUI_Label30.Size = new System.Drawing.Size(94, 30);
@@ -812,7 +904,7 @@
             this.moUI_Label31.FontColor = System.Drawing.Color.White;
             this.moUI_Label31.HoverOpacity = 220;
             this.moUI_Label31.IsSelected = false;
-            this.moUI_Label31.Location = new System.Drawing.Point(250, 233);
+            this.moUI_Label31.Location = new System.Drawing.Point(250, 271);
             this.moUI_Label31.Name = "moUI_Label31";
             this.moUI_Label31.Opacity = 200;
             this.moUI_Label31.Size = new System.Drawing.Size(94, 30);
@@ -834,7 +926,7 @@
             this.TextCover_2_Address._NormalFontColor = System.Drawing.Color.White;
             this.TextCover_2_Address._NormalOpacity = 0.9D;
             this.TextCover_2_Address._Text = "Click Me";
-            this.TextCover_2_Address.Location = new System.Drawing.Point(350, 309);
+            this.TextCover_2_Address.Location = new System.Drawing.Point(350, 347);
             this.TextCover_2_Address.Name = "TextCover_2_Address";
             this.TextCover_2_Address.Size = new System.Drawing.Size(384, 32);
             this.TextCover_2_Address.TabIndex = 70;
@@ -857,7 +949,7 @@
             this.TextCover_2_PoliticalStatus._NormalFontColor = System.Drawing.Color.White;
             this.TextCover_2_PoliticalStatus._NormalOpacity = 0.9D;
             this.TextCover_2_PoliticalStatus._Text = "Click Me";
-            this.TextCover_2_PoliticalStatus.Location = new System.Drawing.Point(350, 233);
+            this.TextCover_2_PoliticalStatus.Location = new System.Drawing.Point(350, 271);
             this.TextCover_2_PoliticalStatus.Name = "TextCover_2_PoliticalStatus";
             this.TextCover_2_PoliticalStatus.Size = new System.Drawing.Size(384, 32);
             this.TextCover_2_PoliticalStatus.TabIndex = 68;
@@ -874,7 +966,7 @@
             this.moUI_Label32.FontColor = System.Drawing.Color.White;
             this.moUI_Label32.HoverOpacity = 220;
             this.moUI_Label32.IsSelected = false;
-            this.moUI_Label32.Location = new System.Drawing.Point(250, 309);
+            this.moUI_Label32.Location = new System.Drawing.Point(250, 347);
             this.moUI_Label32.Name = "moUI_Label32";
             this.moUI_Label32.Opacity = 200;
             this.moUI_Label32.Size = new System.Drawing.Size(94, 30);
@@ -914,7 +1006,7 @@
             this.moUI_Panel2.Controls.Add(this.PictureBox2_0);
             this.moUI_Panel2.Location = new System.Drawing.Point(1103, 92);
             this.moUI_Panel2.Name = "moUI_Panel2";
-            this.moUI_Panel2.Size = new System.Drawing.Size(34, 40);
+            this.moUI_Panel2.Size = new System.Drawing.Size(34, 41);
             this.moUI_Panel2.TabIndex = 54;
             // 
             // moUI_Label34
@@ -1148,6 +1240,12 @@
             // 
             this.moUI_Panel1._BG = null;
             this.moUI_Panel1._BGColorStyle = false;
+            this.moUI_Panel1.Controls.Add(this.TextCover_1_Job);
+            this.moUI_Panel1.Controls.Add(this.moUI_Label38);
+            this.moUI_Panel1.Controls.Add(this.moUI_Switch17);
+            this.moUI_Panel1.Controls.Add(this.moUI_Label37);
+            this.moUI_Panel1.Controls.Add(this.moUI_Switch16);
+            this.moUI_Panel1.Controls.Add(this.TextCover_1_Number);
             this.moUI_Panel1.Controls.Add(this.PictureBox1);
             this.moUI_Panel1.Controls.Add(this.moUI_Button1);
             this.moUI_Panel1.Controls.Add(this.moUI_Label4);
@@ -1194,8 +1292,120 @@
             this.moUI_Panel1.Controls.Add(this.moUI_Switch8);
             this.moUI_Panel1.Location = new System.Drawing.Point(1063, 88);
             this.moUI_Panel1.Name = "moUI_Panel1";
-            this.moUI_Panel1.Size = new System.Drawing.Size(34, 40);
+            this.moUI_Panel1.Size = new System.Drawing.Size(34, 36);
             this.moUI_Panel1.TabIndex = 53;
+            // 
+            // TextCover_1_Job
+            // 
+            this.TextCover_1_Job._AutoSize = true;
+            this.TextCover_1_Job._BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.TextCover_1_Job._BG = null;
+            this.TextCover_1_Job._BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.TextCover_1_Job._Font = new System.Drawing.Font("微软雅黑", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.TextCover_1_Job._HintFontColor = System.Drawing.Color.Black;
+            this.TextCover_1_Job._HintText = "显示";
+            this.TextCover_1_Job._HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.TextCover_1_Job._HoverOpacity = 0.99D;
+            this.TextCover_1_Job._IsShow = true;
+            this.TextCover_1_Job._MoUI_Switch = this.moUI_Switch17;
+            this.TextCover_1_Job._NormalFontColor = System.Drawing.Color.White;
+            this.TextCover_1_Job._NormalOpacity = 0.9D;
+            this.TextCover_1_Job._Text = "职业倾向";
+            this.TextCover_1_Job.Location = new System.Drawing.Point(359, 541);
+            this.TextCover_1_Job.Name = "TextCover_1_Job";
+            this.TextCover_1_Job.Size = new System.Drawing.Size(401, 32);
+            this.TextCover_1_Job.TabIndex = 60;
+            this.TextCover_1_Job.Text = "moUI_TextCover13";
+            // 
+            // moUI_Switch17
+            // 
+            this.moUI_Switch17._BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.moUI_Switch17._BG = ((System.Drawing.Bitmap)(resources.GetObject("moUI_Switch17._BG")));
+            this.moUI_Switch17._BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.moUI_Switch17._HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.moUI_Switch17._HoverOpacity = 0.99D;
+            this.moUI_Switch17._NormalOpacity = 0.8D;
+            this.moUI_Switch17._SwitchBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.moUI_Switch17._SwitchedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
+            this.moUI_Switch17.IsSwitched = false;
+            this.moUI_Switch17.Location = new System.Drawing.Point(766, 549);
+            this.moUI_Switch17.Name = "moUI_Switch17";
+            this.moUI_Switch17.Size = new System.Drawing.Size(50, 14);
+            this.moUI_Switch17.TabIndex = 58;
+            this.moUI_Switch17.Text = "moUI_Switch17";
+            this.moUI_Switch17.Click += new System.EventHandler(this.moUI_Switch17_Click);
+            // 
+            // moUI_Label38
+            // 
+            this.moUI_Label38._AutoSize = true;
+            this.moUI_Label38._Font = new System.Drawing.Font("微软雅黑", 16F);
+            this.moUI_Label38._Text = "职业倾向";
+            this.moUI_Label38.BackColor = System.Drawing.Color.White;
+            this.moUI_Label38.BG = null;
+            this.moUI_Label38.FontColor = System.Drawing.Color.White;
+            this.moUI_Label38.HoverOpacity = 220;
+            this.moUI_Label38.IsSelected = false;
+            this.moUI_Label38.Location = new System.Drawing.Point(259, 541);
+            this.moUI_Label38.Name = "moUI_Label38";
+            this.moUI_Label38.Opacity = 200;
+            this.moUI_Label38.Size = new System.Drawing.Size(94, 30);
+            this.moUI_Label38.TabIndex = 59;
+            // 
+            // moUI_Label37
+            // 
+            this.moUI_Label37._AutoSize = true;
+            this.moUI_Label37._Font = new System.Drawing.Font("微软雅黑", 16F);
+            this.moUI_Label37._Text = "学   号";
+            this.moUI_Label37.BackColor = System.Drawing.Color.White;
+            this.moUI_Label37.BG = null;
+            this.moUI_Label37.FontColor = System.Drawing.Color.White;
+            this.moUI_Label37.HoverOpacity = 220;
+            this.moUI_Label37.IsSelected = false;
+            this.moUI_Label37.Location = new System.Drawing.Point(260, 47);
+            this.moUI_Label37.Name = "moUI_Label37";
+            this.moUI_Label37.Opacity = 200;
+            this.moUI_Label37.Size = new System.Drawing.Size(70, 30);
+            this.moUI_Label37.TabIndex = 56;
+            // 
+            // moUI_Switch16
+            // 
+            this.moUI_Switch16._BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.moUI_Switch16._BG = ((System.Drawing.Bitmap)(resources.GetObject("moUI_Switch16._BG")));
+            this.moUI_Switch16._BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.moUI_Switch16._HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.moUI_Switch16._HoverOpacity = 0.99D;
+            this.moUI_Switch16._NormalOpacity = 0.8D;
+            this.moUI_Switch16._SwitchBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.moUI_Switch16._SwitchedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
+            this.moUI_Switch16.IsSwitched = false;
+            this.moUI_Switch16.Location = new System.Drawing.Point(542, 55);
+            this.moUI_Switch16.Name = "moUI_Switch16";
+            this.moUI_Switch16.Size = new System.Drawing.Size(50, 14);
+            this.moUI_Switch16.TabIndex = 55;
+            this.moUI_Switch16.Text = "moUI_Switch16";
+            this.moUI_Switch16.Click += new System.EventHandler(this.moUI_Switch16_Click);
+            // 
+            // TextCover_1_Number
+            // 
+            this.TextCover_1_Number._AutoSize = true;
+            this.TextCover_1_Number._BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.TextCover_1_Number._BG = null;
+            this.TextCover_1_Number._BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.TextCover_1_Number._Font = new System.Drawing.Font("微软雅黑", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.TextCover_1_Number._HintFontColor = System.Drawing.Color.Black;
+            this.TextCover_1_Number._HintText = "显示";
+            this.TextCover_1_Number._HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.TextCover_1_Number._HoverOpacity = 0.99D;
+            this.TextCover_1_Number._IsShow = true;
+            this.TextCover_1_Number._MoUI_Switch = this.moUI_Switch16;
+            this.TextCover_1_Number._NormalFontColor = System.Drawing.Color.White;
+            this.TextCover_1_Number._NormalOpacity = 0.9D;
+            this.TextCover_1_Number._Text = "学号";
+            this.TextCover_1_Number.Location = new System.Drawing.Point(343, 46);
+            this.TextCover_1_Number.Name = "TextCover_1_Number";
+            this.TextCover_1_Number.Size = new System.Drawing.Size(196, 32);
+            this.TextCover_1_Number.TabIndex = 57;
+            this.TextCover_1_Number.Text = "moUI_TextCover1";
             // 
             // PictureBox1
             // 
@@ -1283,7 +1493,7 @@
             this.TextCover_1_Post._NormalFontColor = System.Drawing.Color.White;
             this.TextCover_1_Post._NormalOpacity = 0.9D;
             this.TextCover_1_Post._Text = "Click Me";
-            this.TextCover_1_Post.Location = new System.Drawing.Point(359, 275);
+            this.TextCover_1_Post.Location = new System.Drawing.Point(359, 313);
             this.TextCover_1_Post.Name = "TextCover_1_Post";
             this.TextCover_1_Post.Size = new System.Drawing.Size(401, 32);
             this.TextCover_1_Post.TabIndex = 51;
@@ -1300,7 +1510,7 @@
             this.moUI_Switch14._SwitchBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.moUI_Switch14._SwitchedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
             this.moUI_Switch14.IsSwitched = false;
-            this.moUI_Switch14.Location = new System.Drawing.Point(766, 283);
+            this.moUI_Switch14.Location = new System.Drawing.Point(766, 321);
             this.moUI_Switch14.Name = "moUI_Switch14";
             this.moUI_Switch14.Size = new System.Drawing.Size(50, 14);
             this.moUI_Switch14.TabIndex = 49;
@@ -1339,7 +1549,7 @@
             this.moUI_Label17.FontColor = System.Drawing.Color.White;
             this.moUI_Label17.HoverOpacity = 220;
             this.moUI_Label17.IsSelected = false;
-            this.moUI_Label17.Location = new System.Drawing.Point(259, 275);
+            this.moUI_Label17.Location = new System.Drawing.Point(259, 313);
             this.moUI_Label17.Name = "moUI_Label17";
             this.moUI_Label17.Opacity = 200;
             this.moUI_Label17.Size = new System.Drawing.Size(94, 30);
@@ -1356,7 +1566,7 @@
             this.moUI_Switch1._SwitchBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.moUI_Switch1._SwitchedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
             this.moUI_Switch1.IsSwitched = false;
-            this.moUI_Switch1.Location = new System.Drawing.Point(542, 55);
+            this.moUI_Switch1.Location = new System.Drawing.Point(542, 93);
             this.moUI_Switch1.Name = "moUI_Switch1";
             this.moUI_Switch1.Size = new System.Drawing.Size(50, 14);
             this.moUI_Switch1.TabIndex = 13;
@@ -1379,7 +1589,7 @@
             this.TextCover_1_Economic._NormalFontColor = System.Drawing.Color.White;
             this.TextCover_1_Economic._NormalOpacity = 0.9D;
             this.TextCover_1_Economic._Text = "Click Me";
-            this.TextCover_1_Economic.Location = new System.Drawing.Point(403, 503);
+            this.TextCover_1_Economic.Location = new System.Drawing.Point(403, 579);
             this.TextCover_1_Economic.Name = "TextCover_1_Economic";
             this.TextCover_1_Economic.Size = new System.Drawing.Size(357, 32);
             this.TextCover_1_Economic.TabIndex = 48;
@@ -1396,7 +1606,7 @@
             this.moUI_Switch13._SwitchBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.moUI_Switch13._SwitchedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
             this.moUI_Switch13.IsSwitched = false;
-            this.moUI_Switch13.Location = new System.Drawing.Point(766, 511);
+            this.moUI_Switch13.Location = new System.Drawing.Point(766, 587);
             this.moUI_Switch13.Name = "moUI_Switch13";
             this.moUI_Switch13.Size = new System.Drawing.Size(50, 14);
             this.moUI_Switch13.TabIndex = 46;
@@ -1413,7 +1623,7 @@
             this.moUI_Label5.FontColor = System.Drawing.Color.White;
             this.moUI_Label5.HoverOpacity = 220;
             this.moUI_Label5.IsSelected = false;
-            this.moUI_Label5.Location = new System.Drawing.Point(260, 47);
+            this.moUI_Label5.Location = new System.Drawing.Point(260, 85);
             this.moUI_Label5.Name = "moUI_Label5";
             this.moUI_Label5.Opacity = 200;
             this.moUI_Label5.Size = new System.Drawing.Size(70, 30);
@@ -1435,7 +1645,7 @@
             this.TextCover_1_Gender._NormalFontColor = System.Drawing.Color.White;
             this.TextCover_1_Gender._NormalOpacity = 0.9D;
             this.TextCover_1_Gender._Text = "插入一条学生数据";
-            this.TextCover_1_Gender.Location = new System.Drawing.Point(343, 46);
+            this.TextCover_1_Gender.Location = new System.Drawing.Point(343, 84);
             this.TextCover_1_Gender.Name = "TextCover_1_Gender";
             this.TextCover_1_Gender.Size = new System.Drawing.Size(196, 32);
             this.TextCover_1_Gender.TabIndex = 15;
@@ -1451,7 +1661,7 @@
             this.moUI_Label16.FontColor = System.Drawing.Color.White;
             this.moUI_Label16.HoverOpacity = 220;
             this.moUI_Label16.IsSelected = false;
-            this.moUI_Label16.Location = new System.Drawing.Point(259, 503);
+            this.moUI_Label16.Location = new System.Drawing.Point(259, 579);
             this.moUI_Label16.Name = "moUI_Label16";
             this.moUI_Label16.Opacity = 200;
             this.moUI_Label16.Size = new System.Drawing.Size(138, 30);
@@ -1467,7 +1677,7 @@
             this.moUI_Label6.FontColor = System.Drawing.Color.White;
             this.moUI_Label6.HoverOpacity = 220;
             this.moUI_Label6.IsSelected = false;
-            this.moUI_Label6.Location = new System.Drawing.Point(260, 85);
+            this.moUI_Label6.Location = new System.Drawing.Point(260, 123);
             this.moUI_Label6.Name = "moUI_Label6";
             this.moUI_Label6.Opacity = 200;
             this.moUI_Label6.Size = new System.Drawing.Size(70, 30);
@@ -1484,7 +1694,7 @@
             this.moUI_Switch3._SwitchBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.moUI_Switch3._SwitchedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
             this.moUI_Switch3.IsSwitched = false;
-            this.moUI_Switch3.Location = new System.Drawing.Point(542, 93);
+            this.moUI_Switch3.Location = new System.Drawing.Point(542, 131);
             this.moUI_Switch3.Name = "moUI_Switch3";
             this.moUI_Switch3.Size = new System.Drawing.Size(50, 14);
             this.moUI_Switch3.TabIndex = 16;
@@ -1507,7 +1717,7 @@
             this.TextCover_1_Habby._NormalFontColor = System.Drawing.Color.White;
             this.TextCover_1_Habby._NormalOpacity = 0.9D;
             this.TextCover_1_Habby._Text = "Click Me";
-            this.TextCover_1_Habby.Location = new System.Drawing.Point(359, 465);
+            this.TextCover_1_Habby.Location = new System.Drawing.Point(359, 503);
             this.TextCover_1_Habby.Name = "TextCover_1_Habby";
             this.TextCover_1_Habby.Size = new System.Drawing.Size(401, 32);
             this.TextCover_1_Habby.TabIndex = 45;
@@ -1524,7 +1734,7 @@
             this.moUI_Switch12._SwitchBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.moUI_Switch12._SwitchedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
             this.moUI_Switch12.IsSwitched = false;
-            this.moUI_Switch12.Location = new System.Drawing.Point(766, 473);
+            this.moUI_Switch12.Location = new System.Drawing.Point(766, 511);
             this.moUI_Switch12.Name = "moUI_Switch12";
             this.moUI_Switch12.Size = new System.Drawing.Size(50, 14);
             this.moUI_Switch12.TabIndex = 43;
@@ -1547,7 +1757,7 @@
             this.TextCover_1_Class._NormalFontColor = System.Drawing.Color.White;
             this.TextCover_1_Class._NormalOpacity = 0.9D;
             this.TextCover_1_Class._Text = "获取学生集合";
-            this.TextCover_1_Class.Location = new System.Drawing.Point(343, 84);
+            this.TextCover_1_Class.Location = new System.Drawing.Point(343, 122);
             this.TextCover_1_Class.Name = "TextCover_1_Class";
             this.TextCover_1_Class.Size = new System.Drawing.Size(196, 32);
             this.TextCover_1_Class.TabIndex = 18;
@@ -1563,7 +1773,7 @@
             this.moUI_Label15.FontColor = System.Drawing.Color.White;
             this.moUI_Label15.HoverOpacity = 220;
             this.moUI_Label15.IsSelected = false;
-            this.moUI_Label15.Location = new System.Drawing.Point(259, 465);
+            this.moUI_Label15.Location = new System.Drawing.Point(259, 503);
             this.moUI_Label15.Name = "moUI_Label15";
             this.moUI_Label15.Opacity = 200;
             this.moUI_Label15.Size = new System.Drawing.Size(94, 30);
@@ -1579,7 +1789,7 @@
             this.moUI_Label7.FontColor = System.Drawing.Color.White;
             this.moUI_Label7.HoverOpacity = 220;
             this.moUI_Label7.IsSelected = false;
-            this.moUI_Label7.Location = new System.Drawing.Point(260, 123);
+            this.moUI_Label7.Location = new System.Drawing.Point(260, 161);
             this.moUI_Label7.Name = "moUI_Label7";
             this.moUI_Label7.Opacity = 200;
             this.moUI_Label7.Size = new System.Drawing.Size(70, 30);
@@ -1596,7 +1806,7 @@
             this.moUI_Switch4._SwitchBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.moUI_Switch4._SwitchedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
             this.moUI_Switch4.IsSwitched = false;
-            this.moUI_Switch4.Location = new System.Drawing.Point(542, 131);
+            this.moUI_Switch4.Location = new System.Drawing.Point(542, 169);
             this.moUI_Switch4.Name = "moUI_Switch4";
             this.moUI_Switch4.Size = new System.Drawing.Size(50, 14);
             this.moUI_Switch4.TabIndex = 19;
@@ -1619,7 +1829,7 @@
             this.TextCover_1_Study._NormalFontColor = System.Drawing.Color.White;
             this.TextCover_1_Study._NormalOpacity = 0.9D;
             this.TextCover_1_Study._Text = "Click Me";
-            this.TextCover_1_Study.Location = new System.Drawing.Point(359, 427);
+            this.TextCover_1_Study.Location = new System.Drawing.Point(359, 465);
             this.TextCover_1_Study.Name = "TextCover_1_Study";
             this.TextCover_1_Study.Size = new System.Drawing.Size(401, 32);
             this.TextCover_1_Study.TabIndex = 42;
@@ -1636,7 +1846,7 @@
             this.moUI_Switch11._SwitchBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.moUI_Switch11._SwitchedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
             this.moUI_Switch11.IsSwitched = false;
-            this.moUI_Switch11.Location = new System.Drawing.Point(766, 435);
+            this.moUI_Switch11.Location = new System.Drawing.Point(766, 473);
             this.moUI_Switch11.Name = "moUI_Switch11";
             this.moUI_Switch11.Size = new System.Drawing.Size(50, 14);
             this.moUI_Switch11.TabIndex = 40;
@@ -1659,7 +1869,7 @@
             this.TextCover_1_Major._NormalFontColor = System.Drawing.Color.White;
             this.TextCover_1_Major._NormalOpacity = 0.9D;
             this.TextCover_1_Major._Text = "获取学生信息_ID";
-            this.TextCover_1_Major.Location = new System.Drawing.Point(343, 122);
+            this.TextCover_1_Major.Location = new System.Drawing.Point(343, 160);
             this.TextCover_1_Major.Name = "TextCover_1_Major";
             this.TextCover_1_Major.Size = new System.Drawing.Size(196, 32);
             this.TextCover_1_Major.TabIndex = 21;
@@ -1675,7 +1885,7 @@
             this.moUI_Label14.FontColor = System.Drawing.Color.White;
             this.moUI_Label14.HoverOpacity = 220;
             this.moUI_Label14.IsSelected = false;
-            this.moUI_Label14.Location = new System.Drawing.Point(259, 427);
+            this.moUI_Label14.Location = new System.Drawing.Point(259, 465);
             this.moUI_Label14.Name = "moUI_Label14";
             this.moUI_Label14.Opacity = 200;
             this.moUI_Label14.Size = new System.Drawing.Size(94, 30);
@@ -1691,7 +1901,7 @@
             this.moUI_Label8.FontColor = System.Drawing.Color.White;
             this.moUI_Label8.HoverOpacity = 220;
             this.moUI_Label8.IsSelected = false;
-            this.moUI_Label8.Location = new System.Drawing.Point(260, 161);
+            this.moUI_Label8.Location = new System.Drawing.Point(260, 199);
             this.moUI_Label8.Name = "moUI_Label8";
             this.moUI_Label8.Opacity = 200;
             this.moUI_Label8.Size = new System.Drawing.Size(70, 30);
@@ -1708,7 +1918,7 @@
             this.moUI_Switch5._SwitchBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.moUI_Switch5._SwitchedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
             this.moUI_Switch5.IsSwitched = false;
-            this.moUI_Switch5.Location = new System.Drawing.Point(542, 169);
+            this.moUI_Switch5.Location = new System.Drawing.Point(542, 207);
             this.moUI_Switch5.Name = "moUI_Switch5";
             this.moUI_Switch5.Size = new System.Drawing.Size(50, 14);
             this.moUI_Switch5.TabIndex = 22;
@@ -1731,7 +1941,7 @@
             this.TextCover_1_BonusAndPenalty._NormalFontColor = System.Drawing.Color.White;
             this.TextCover_1_BonusAndPenalty._NormalOpacity = 0.9D;
             this.TextCover_1_BonusAndPenalty._Text = "Click Me";
-            this.TextCover_1_BonusAndPenalty.Location = new System.Drawing.Point(359, 389);
+            this.TextCover_1_BonusAndPenalty.Location = new System.Drawing.Point(359, 427);
             this.TextCover_1_BonusAndPenalty.Name = "TextCover_1_BonusAndPenalty";
             this.TextCover_1_BonusAndPenalty.Size = new System.Drawing.Size(401, 32);
             this.TextCover_1_BonusAndPenalty.TabIndex = 39;
@@ -1753,7 +1963,7 @@
             this.TextCover_1_Nation._NormalFontColor = System.Drawing.Color.White;
             this.TextCover_1_Nation._NormalOpacity = 0.9D;
             this.TextCover_1_Nation._Text = "Excel";
-            this.TextCover_1_Nation.Location = new System.Drawing.Point(343, 160);
+            this.TextCover_1_Nation.Location = new System.Drawing.Point(343, 198);
             this.TextCover_1_Nation.Name = "TextCover_1_Nation";
             this.TextCover_1_Nation.Size = new System.Drawing.Size(196, 32);
             this.TextCover_1_Nation.TabIndex = 24;
@@ -1769,7 +1979,7 @@
             this.moUI_Label13.FontColor = System.Drawing.Color.White;
             this.moUI_Label13.HoverOpacity = 220;
             this.moUI_Label13.IsSelected = false;
-            this.moUI_Label13.Location = new System.Drawing.Point(259, 389);
+            this.moUI_Label13.Location = new System.Drawing.Point(259, 427);
             this.moUI_Label13.Name = "moUI_Label13";
             this.moUI_Label13.Opacity = 200;
             this.moUI_Label13.Size = new System.Drawing.Size(94, 30);
@@ -1785,7 +1995,7 @@
             this.moUI_Label9.FontColor = System.Drawing.Color.White;
             this.moUI_Label9.HoverOpacity = 220;
             this.moUI_Label9.IsSelected = false;
-            this.moUI_Label9.Location = new System.Drawing.Point(259, 199);
+            this.moUI_Label9.Location = new System.Drawing.Point(259, 237);
             this.moUI_Label9.Name = "moUI_Label9";
             this.moUI_Label9.Opacity = 200;
             this.moUI_Label9.Size = new System.Drawing.Size(73, 30);
@@ -1802,7 +2012,7 @@
             this.moUI_Switch6._SwitchBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.moUI_Switch6._SwitchedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
             this.moUI_Switch6.IsSwitched = false;
-            this.moUI_Switch6.Location = new System.Drawing.Point(542, 207);
+            this.moUI_Switch6.Location = new System.Drawing.Point(542, 245);
             this.moUI_Switch6.Name = "moUI_Switch6";
             this.moUI_Switch6.Size = new System.Drawing.Size(50, 14);
             this.moUI_Switch6.TabIndex = 25;
@@ -1825,7 +2035,7 @@
             this.TextCover_1_DormMember._NormalFontColor = System.Drawing.Color.White;
             this.TextCover_1_DormMember._NormalOpacity = 0.9D;
             this.TextCover_1_DormMember._Text = "Click Me";
-            this.TextCover_1_DormMember.Location = new System.Drawing.Point(359, 351);
+            this.TextCover_1_DormMember.Location = new System.Drawing.Point(359, 389);
             this.TextCover_1_DormMember.Name = "TextCover_1_DormMember";
             this.TextCover_1_DormMember.Size = new System.Drawing.Size(401, 32);
             this.TextCover_1_DormMember.TabIndex = 36;
@@ -1842,7 +2052,7 @@
             this.moUI_Switch9._SwitchBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.moUI_Switch9._SwitchedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
             this.moUI_Switch9.IsSwitched = false;
-            this.moUI_Switch9.Location = new System.Drawing.Point(766, 359);
+            this.moUI_Switch9.Location = new System.Drawing.Point(766, 397);
             this.moUI_Switch9.Name = "moUI_Switch9";
             this.moUI_Switch9.Size = new System.Drawing.Size(50, 14);
             this.moUI_Switch9.TabIndex = 34;
@@ -1865,7 +2075,7 @@
             this.TextCover_1_Dorm._NormalFontColor = System.Drawing.Color.White;
             this.TextCover_1_Dorm._NormalOpacity = 0.9D;
             this.TextCover_1_Dorm._Text = "Click Me";
-            this.TextCover_1_Dorm.Location = new System.Drawing.Point(343, 198);
+            this.TextCover_1_Dorm.Location = new System.Drawing.Point(343, 236);
             this.TextCover_1_Dorm.Name = "TextCover_1_Dorm";
             this.TextCover_1_Dorm.Size = new System.Drawing.Size(196, 32);
             this.TextCover_1_Dorm.TabIndex = 27;
@@ -1881,7 +2091,7 @@
             this.moUI_Label12.FontColor = System.Drawing.Color.White;
             this.moUI_Label12.HoverOpacity = 220;
             this.moUI_Label12.IsSelected = false;
-            this.moUI_Label12.Location = new System.Drawing.Point(259, 351);
+            this.moUI_Label12.Location = new System.Drawing.Point(259, 389);
             this.moUI_Label12.Name = "moUI_Label12";
             this.moUI_Label12.Opacity = 200;
             this.moUI_Label12.Size = new System.Drawing.Size(94, 30);
@@ -1897,7 +2107,7 @@
             this.moUI_Label10.FontColor = System.Drawing.Color.White;
             this.moUI_Label10.HoverOpacity = 220;
             this.moUI_Label10.IsSelected = false;
-            this.moUI_Label10.Location = new System.Drawing.Point(259, 237);
+            this.moUI_Label10.Location = new System.Drawing.Point(259, 275);
             this.moUI_Label10.Name = "moUI_Label10";
             this.moUI_Label10.Opacity = 200;
             this.moUI_Label10.Size = new System.Drawing.Size(94, 30);
@@ -1914,7 +2124,7 @@
             this.moUI_Switch7._SwitchBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.moUI_Switch7._SwitchedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
             this.moUI_Switch7.IsSwitched = false;
-            this.moUI_Switch7.Location = new System.Drawing.Point(766, 245);
+            this.moUI_Switch7.Location = new System.Drawing.Point(766, 283);
             this.moUI_Switch7.Name = "moUI_Switch7";
             this.moUI_Switch7.Size = new System.Drawing.Size(50, 14);
             this.moUI_Switch7.TabIndex = 28;
@@ -1937,7 +2147,7 @@
             this.TextCover_1_Address._NormalFontColor = System.Drawing.Color.White;
             this.TextCover_1_Address._NormalOpacity = 0.9D;
             this.TextCover_1_Address._Text = "Click Me";
-            this.TextCover_1_Address.Location = new System.Drawing.Point(359, 313);
+            this.TextCover_1_Address.Location = new System.Drawing.Point(359, 351);
             this.TextCover_1_Address.Name = "TextCover_1_Address";
             this.TextCover_1_Address.Size = new System.Drawing.Size(401, 32);
             this.TextCover_1_Address.TabIndex = 33;
@@ -1954,7 +2164,7 @@
             this.moUI_Switch8._SwitchBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.moUI_Switch8._SwitchedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
             this.moUI_Switch8.IsSwitched = false;
-            this.moUI_Switch8.Location = new System.Drawing.Point(766, 321);
+            this.moUI_Switch8.Location = new System.Drawing.Point(766, 359);
             this.moUI_Switch8.Name = "moUI_Switch8";
             this.moUI_Switch8.Size = new System.Drawing.Size(50, 14);
             this.moUI_Switch8.TabIndex = 31;
@@ -1977,7 +2187,7 @@
             this.TextCover_1_PoliticalStatus._NormalFontColor = System.Drawing.Color.White;
             this.TextCover_1_PoliticalStatus._NormalOpacity = 0.9D;
             this.TextCover_1_PoliticalStatus._Text = "Click Me";
-            this.TextCover_1_PoliticalStatus.Location = new System.Drawing.Point(359, 237);
+            this.TextCover_1_PoliticalStatus.Location = new System.Drawing.Point(359, 275);
             this.TextCover_1_PoliticalStatus.Name = "TextCover_1_PoliticalStatus";
             this.TextCover_1_PoliticalStatus.Size = new System.Drawing.Size(401, 32);
             this.TextCover_1_PoliticalStatus.TabIndex = 30;
@@ -1993,7 +2203,7 @@
             this.moUI_Label11.FontColor = System.Drawing.Color.White;
             this.moUI_Label11.HoverOpacity = 220;
             this.moUI_Label11.IsSelected = false;
-            this.moUI_Label11.Location = new System.Drawing.Point(259, 313);
+            this.moUI_Label11.Location = new System.Drawing.Point(259, 351);
             this.moUI_Label11.Name = "moUI_Label11";
             this.moUI_Label11.Opacity = 200;
             this.moUI_Label11.Size = new System.Drawing.Size(94, 30);
@@ -2184,6 +2394,16 @@
         private Controls.MoUI_Label moUI_Label33;
         private Controls.MoUI_Label moUI_Label19;
         private Controls.MoUI_Label moUI_Label18;
+        private Controls.MoUI_Label moUI_Label37;
+        private Controls.MoUI_Switch moUI_Switch16;
+        private Controls.MoUI_TextCover TextCover_1_Number;
+        private Controls.MoUI_TextCover TextCover_1_Job;
+        private Controls.MoUI_Switch moUI_Switch17;
+        private Controls.MoUI_Label moUI_Label38;
+        private Controls.MoUI_Label moUI_Label39;
+        private Controls.MoUI_TextCover TextCover_2_Number;
+        private Controls.MoUI_TextCover TextCover_2_Job;
+        private Controls.MoUI_Label moUI_Label40;
     }
 }
 

@@ -47,6 +47,8 @@ namespace CounselorCompetition.Struct
         public string Habby;
         public string PhotoPath;
         public string ID;
+        public string Number;
+        public string Job;
         public Bitmap Photo;
     }
 }

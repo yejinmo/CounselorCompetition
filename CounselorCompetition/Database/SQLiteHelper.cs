@@ -64,6 +64,8 @@ namespace CounselorCompetition.Database
 	Study varchar(100),
 	Habby varchar(100),
 	PhotoPath varchar(100),
+	Number varchar(20),
+	Job varchar(100),
 	ID INTEGER PRIMARY KEY
 	);";
 
@@ -124,7 +126,7 @@ namespace CounselorCompetition.Database
         /// <returns>操作是否成功</returns>
         public bool InsertNewStudent(string Name, string Gender, string Class, string Major, string PoliticalStatus, 
                                             string Nation, string Post, string Address, string Dorm, string DormMember,
-                                            string Economic, string BonusAndPenalty, string Study, string Habby)
+                                            string Economic, string BonusAndPenalty, string Study, string Habby, string Job, string Number)
         {
             try
             {
@@ -133,8 +135,8 @@ namespace CounselorCompetition.Database
                 string SQL_Insert = string.Format(
                     @"INSERT INTO StudentInfo ([Name], [Gender], [Class], [Major], [PoliticalStatus], 
 	[Nation], [Post], [Address], [Dorm], [DormMember],
-	[Economic], [BonusAndPenalty], [Study], [Habby])
-VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}')",
+	[Economic], [BonusAndPenalty], [Study], [Habby], [Job], [Number])
+VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}', '{14}', '{15}')",
                     Name,
                     Gender,
                     Class,
@@ -148,7 +150,9 @@ VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{1
                     Economic,
                     BonusAndPenalty,
                     Study,
-                    Habby
+                    Habby,
+                    Job,
+                    Number
                     );
 
                 SQLiteCommand cmd = new SQLiteCommand(SQL_Insert, CONN);
@@ -184,7 +188,7 @@ VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{1
         /// <returns>操作是否成功</returns>
         public bool InsertNewStudent(string Name, string Gender, string Class, string Major, string PoliticalStatus,
                                             string Nation, string Post, string Address, string Dorm, string DormMember,
-                                            string Economic, string BonusAndPenalty, string Study, string Habby, string PhotoPath)
+                                            string Economic, string BonusAndPenalty, string Study, string Habby, string PhotoPath, string Job, string Number)
         {
             try
             {
@@ -193,8 +197,8 @@ VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{1
                 string SQL_Insert = string.Format(
                     @"INSERT INTO StudentInfo ([Name], [Gender], [Class], [Major], [PoliticalStatus], 
 	[Nation], [Post], [Address], [Dorm], [DormMember],
-	[Economic], [BonusAndPenalty], [Study], [Habby], [PhotoPath])
-VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}', '{14}')",
+	[Economic], [BonusAndPenalty], [Study], [Habby], [PhotoPath], [Job], [Number])
+VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}', '{14}', '{15}', '{16}')",
                     Name,
                     Gender,
                     Class,
@@ -209,7 +213,9 @@ VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{1
                     BonusAndPenalty,
                     Study,
                     Habby,
-                    PhotoPath
+                    PhotoPath,
+                    Job,
+                    Number
                     );
 
                 SQLiteCommand cmd = new SQLiteCommand(SQL_Insert, CONN);
@@ -245,7 +251,8 @@ VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{1
                            Name = dt.Rows[curRow][1].ToString();
                     if (string.IsNullOrEmpty(Name))
                         break;
-                    string Gender = dt.Rows[curRow][2].ToString().Trim().Replace("\n","").Replace("\r", ""),
+                    string Number = dt.Rows[curRow][1].ToString().Trim().Replace("\n", "").Replace("\r", ""),
+                           Gender = dt.Rows[curRow][2].ToString().Trim().Replace("\n","").Replace("\r", ""),
                            Class = dt.Rows[curRow][3].ToString().Trim().Replace("\n", "").Replace("\r", ""),
                            Major = dt.Rows[curRow][4].ToString().Trim().Replace("\n", "").Replace("\r", ""),
                            PoliticalStatus = dt.Rows[curRow][5].ToString().Trim().Replace("\n", "").Replace("\r", ""),
@@ -258,6 +265,7 @@ VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{1
                            BonusAndPenalty = dt.Rows[curRow][12].ToString().Trim().Replace("\n", "").Replace("\r", ""),
                            Study = dt.Rows[curRow][13].ToString().Trim().Replace("\n", "").Replace("\r", ""),
                            Habby = dt.Rows[curRow][14].ToString().Trim().Replace("\n", "").Replace("\r", ""),
+                           Job = dt.Rows[curRow][15].ToString().Trim().Replace("\n", "").Replace("\r", ""),
                            PhotoPath = "Data/IMG/" + Major + "/" + Class + "/" + Name;
                     if (frm != null)
                     {
@@ -270,8 +278,8 @@ VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{1
                     string SQL_Insert = string.Format(
     @"INSERT INTO StudentInfo ([Name], [Gender], [Class], [Major], [PoliticalStatus], 
 	[Nation], [Post], [Address], [Dorm], [DormMember],
-	[Economic], [BonusAndPenalty], [Study], [Habby], [PhotoPath])
-VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}', '{14}')",
+	[Economic], [BonusAndPenalty], [Study], [Habby], [PhotoPath], [Job], [Number])
+VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}', '{14}', '{15}', '{16}')",
     Name,
     Gender,
     Class,
@@ -286,7 +294,9 @@ VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{1
     BonusAndPenalty,
     Study,
     Habby,
-    PhotoPath
+    PhotoPath,
+    Job,
+    Number
     );
                     SQLiteCommand cmd = new SQLiteCommand(SQL_Insert, CONN);
                     cmd.ExecuteNonQuery();
@@ -342,6 +352,8 @@ VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{1
                         si.Habby = sdr["Habby"].ToString();
                         si.PhotoPath = sdr["PhotoPath"].ToString();
                         si.ID = sdr["ID"].ToString();
+                        si.Job = sdr["Job"].ToString();
+                        si.Number = sdr["Number"].ToString();
                         if (!File.Exists(si.PhotoPath))
                             continue;
                         res.Add(si);
@@ -390,6 +402,8 @@ VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{1
                     res.Habby = sdr["Habby"].ToString();
                     res.PhotoPath = sdr["PhotoPath"].ToString();
                     res.ID = sdr["ID"].ToString();
+                    res.Job = sdr["Job"].ToString();
+                    res.Number = sdr["Number"].ToString();
                 }
                 sdr.Close();
                 CONN.Close();
@@ -464,6 +478,8 @@ VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{1
                                 si.Habby = sdrStudent["Habby"].ToString();
                                 si.PhotoPath = sdrStudent["PhotoPath"].ToString();
                                 si.ID = sdrStudent["ID"].ToString();
+                                si.Job = sdrStudent["Job"].ToString();
+                                si.Number = sdrStudent["Number"].ToString();
                                 if (File.Exists(si.PhotoPath) || File.Exists(si.PhotoPath + ".jpg") || File.Exists(si.PhotoPath + ".png") || File.Exists(si.PhotoPath + ".jpg.jpg"))
                                     resStudentList.Add(si);
                             }

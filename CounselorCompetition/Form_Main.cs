@@ -320,16 +320,16 @@ namespace CounselorCompetition
                 }
                 //Test Sub
                 {
-                        //GraphicsPath graphicsPath = new GraphicsPath();
-                        //graphicsPath.AddEllipse(new Rectangle(0, 0, 200, 200));
-                        //PathGradientBrush pathGradientBrush = new PathGradientBrush(graphicsPath);
-                        //pathGradientBrush.CenterColor = Color.FromArgb(255, 232, 3);
-                        //pathGradientBrush.CenterPoint = new PointF(100, 100);
-                        //pathGradientBrush.SurroundColors = new Color[] { Color.Transparent };
-                        //e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
-                        //e.Graphics.FillEllipse(pathGradientBrush, new Rectangle(0, 0, 200, 200));
-                        //graphicsPath.Dispose();
-                        //pathGradientBrush.Dispose();
+                    //GraphicsPath graphicsPath = new GraphicsPath();
+                    //graphicsPath.AddEllipse(new Rectangle(0, 0, 200, 200));
+                    //PathGradientBrush pathGradientBrush = new PathGradientBrush(graphicsPath);
+                    //pathGradientBrush.CenterColor = Color.FromArgb(255, 232, 3);
+                    //pathGradientBrush.CenterPoint = new PointF(100, 100);
+                    //pathGradientBrush.SurroundColors = new Color[] { Color.Transparent };
+                    //e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+                    //e.Graphics.FillEllipse(pathGradientBrush, new Rectangle(0, 0, 200, 200));
+                    //graphicsPath.Dispose();
+                    //pathGradientBrush.Dispose();
                 }
                 g.Save();
                 e.Graphics.DrawImage(b, new Point(0, 0));
@@ -453,7 +453,7 @@ namespace CounselorCompetition
             Refresh();
         }
 
-        private void Panel_Header_MouseMove(object sender, MouseEventArgs e) 
+        private void Panel_Header_MouseMove(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
             SendMessage(this.Handle, WM_SYSCOMMAND, SC_MOVE + HTCAPTION, 0);
@@ -494,6 +494,8 @@ namespace CounselorCompetition
                     TextCover_1_BonusAndPenalty._Text = temp.BonusAndPenalty;
                     TextCover_1_Study._Text = temp.Study;
                     TextCover_1_Habby._Text = temp.Habby;
+                    TextCover_1_Job._Text = temp.Job;
+                    TextCover_1_Number._Text = temp.Number;
                     PictureBox1._Image = GetStudentPhoto(temp.PhotoPath);
                     moUI_Label1.IsSelected = true;
                     moUI_Button1._Text = "下一个";
@@ -581,8 +583,8 @@ namespace CounselorCompetition
                 else
                     return null;
                 //if (res.Height / res.Width > 271.0 / 196.0)
-                    res = ImageEx.SmallPicH(res, 271);
-                if(res.Width < 196)
+                res = ImageEx.SmallPicH(res, 271);
+                if (res.Width < 196)
                     res = ImageEx.SmallPic(res, 196);
                 //else
                 //    res = ImageEx.SmallPic(res, 196);
@@ -623,7 +625,7 @@ namespace CounselorCompetition
             moUI_Label2.IsSelected = false;
             moUI_Label1.IsSelected = true;
             moUI_Label3.IsSelected = false;
-            moUI_Panel1.Size = new Size(819, 535);
+            moUI_Panel1.Size = new Size(819, 535 + 96);
             MakePanelTextCover_IsShow(moUI_Panel1, false);
             MakePanelSwicth_IsSelect(moUI_Panel1, false, true, false);
             moUI_Button1._Text = "下一个";
@@ -652,6 +654,8 @@ namespace CounselorCompetition
                     TextCover_1_BonusAndPenalty._Text = temp.BonusAndPenalty;
                     TextCover_1_Study._Text = temp.Study;
                     TextCover_1_Habby._Text = temp.Habby;
+                    TextCover_1_Job._Text = temp.Job;
+                    TextCover_1_Number._Text = temp.Number;
                     PictureBox1._Image = GetStudentPhoto(temp.PhotoPath);
                     if (QuestionControler.QuestionMod_0 >= 2)
                         moUI_Button1._Text = "下一个比赛项目";
@@ -754,6 +758,16 @@ namespace CounselorCompetition
             int i = (moUI_Switch13.IsSwitched ? CurrentSocre++ : CurrentSocre--);
         }
 
+        private void moUI_Switch16_Click(object sender, EventArgs e)
+        {
+            int i = (moUI_Switch16.IsSwitched ? CurrentSocre++ : CurrentSocre--);
+        }
+
+        private void moUI_Switch17_Click(object sender, EventArgs e)
+        {
+            int i = (moUI_Switch17.IsSwitched ? CurrentSocre++ : CurrentSocre--);
+        }
+
         #endregion
 
         #endregion
@@ -803,6 +817,8 @@ namespace CounselorCompetition
                 TextCover_1_BonusAndPenalty._Text = temp.BonusAndPenalty;
                 TextCover_1_Study._Text = temp.Study;
                 TextCover_1_Habby._Text = temp.Habby;
+                TextCover_1_Number._Text = temp.Number;
+                TextCover_1_Job._Text = temp.Job;
                 PictureBox1._Image = GetStudentPhoto(temp.PhotoPath);
                 MakePanelTextCover_IsShow(moUI_Panel1, false);
                 MakePanelSwicth_IsSelect(moUI_Panel1, false, true, false);
@@ -864,7 +880,7 @@ namespace CounselorCompetition
 
         private void LoadPanel3()
         {
-            moUI_Panel3.Size = new Size(740, 540);
+            moUI_Panel3.Size = new Size(740, 540 + 96);
         }
 
         private string Question3PhotoPath;
@@ -893,6 +909,8 @@ namespace CounselorCompetition
             TextCover_2_BonusAndPenalty._Text = temp.BonusAndPenalty;
             TextCover_2_Study._Text = temp.Study;
             TextCover_2_Habby._Text = temp.Habby;
+            TextCover_2_Job._Text = temp.Job;
+            TextCover_2_Number._Text = temp.Number;
             Question3PhotoPath = temp.PhotoPath;
             moUI_Button3.Enabled = false;
             moUI_PictureBox8._Image = null;
@@ -906,6 +924,8 @@ namespace CounselorCompetition
             TextCover_2_Post._IsShow = QuestionControler.GetMod_2IsShow();
             TextCover_2_Study._IsShow = QuestionControler.GetMod_2IsShow();
             TextCover_2_Habby._IsShow = QuestionControler.GetMod_2IsShow();
+            TextCover_2_Job._IsShow = QuestionControler.GetMod_2IsShow();
+            TextCover_2_Number._IsShow = QuestionControler.GetMod_2IsShow();
         }
 
         private void moUI_Button3_Click(object sender, EventArgs e)
@@ -1044,6 +1064,22 @@ namespace CounselorCompetition
                 Sub3Socre++;
         }
 
+        private void TextCover_2_Job_Click(object sender, EventArgs e)
+        {
+            if (TextCover_2_Job._IsShow)
+                Sub3Socre--;
+            else
+                Sub3Socre++;
+        }
+
+        private void TextCover_2_Number_Click(object sender, EventArgs e)
+        {
+            if (TextCover_2_Number._IsShow)
+                Sub3Socre--;
+            else
+                Sub3Socre++;
+        }
+
         private void TextCover_2_Economic_Click(object sender, EventArgs e)
         {
             if (TextCover_2_Economic._IsShow)
@@ -1073,7 +1109,7 @@ namespace CounselorCompetition
                 if (t.Socre <= 0)
                     lvi.SubItems.Add("——");
                 else
-                    lvi.SubItems.Add(t.Socre.ToString() + "(" + (t.Socre / 128f * 100).ToString("0.00") + "%)");
+                    lvi.SubItems.Add(t.Socre.ToString() + "(" + (t.Socre / (128f + 20f) * 100).ToString("0.00") + "%)");
                 if (t.Time <= 0)
                     lvi.SubItems.Add("——");
                 else
@@ -1086,7 +1122,7 @@ namespace CounselorCompetition
                 ScoreListView.Items.Add(lvi);
             }
             int i = 20;
-            while(i-->0)
+            while (i-- > 0)
             {
                 ListViewItem lvi = new ListViewItem("");
                 lvi.SubItems.Add("");
@@ -1099,7 +1135,7 @@ namespace CounselorCompetition
                 ctl.Visible = false;
             ScoreListView.EndUpdate();
             ScoreListView.Invalidate();
-            if(AutoShow)
+            if (AutoShow)
                 ScoreListView.Visible = true;
         }
 

@@ -68,7 +68,7 @@ namespace CounselorCompetition
                 Invoke((EventHandler)delegate
                 {
                     Enabled = false;
-                    MessageBox.Show(this, "\n\n数据表格式如下且需包含表头：\n序号|姓名|性别|班级|专业|政治|面貌|民族|担任职务|家庭住址|宿舍|宿舍成员|家庭经济状况|奖惩情况|学习状况|兴趣爱好\n\n不能重复导入相同的数据表\n\n", "重要提示");
+                    MessageBox.Show(this, "\n\n数据表格式如下且需包含表头：\n学号|姓名|性别|班级|专业|政治面貌|民族|担任职务|家庭住址|宿舍|宿舍成员|家庭经济状况|奖惩情况|学习状况|兴趣爱好\n\n不能重复导入相同的数据表\n\n", "重要提示");
                     openFile.Title = "请选择目标Excel表";
                     openFile.Filter = "Excel(*.xls;*.xlsx)|*.xls;*.xlsx";
                     openFile.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
