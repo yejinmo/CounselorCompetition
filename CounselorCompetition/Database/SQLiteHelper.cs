@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Data.SQLite;
 using System.IO;
 using CounselorCompetition.Struct;
 using System.Data;
 using System.Drawing;
 using System.Threading;
+using System.Data.SQLite;
 
 namespace CounselorCompetition.Database
 {
@@ -240,7 +240,7 @@ VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{1
             try
             {
                 input_success_total = 0;
-                if (dt.Columns.Count != 15)
+                if (dt.Columns.Count != 17)
                     return false;
                 CONN.Open();
                 var trans = CONN.BeginTransaction();
@@ -248,25 +248,53 @@ VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{1
                 {
                     input_success_total = curRow;
                     string ID = dt.Rows[curRow][0].ToString(),
-                           Name = dt.Rows[curRow][1].ToString();
+                           Name = dt.Rows[curRow][2].ToString();
                     if (string.IsNullOrEmpty(Name))
                         break;
+
+                    #region
+
                     string Number = dt.Rows[curRow][1].ToString().Trim().Replace("\n", "").Replace("\r", ""),
-                           Gender = dt.Rows[curRow][2].ToString().Trim().Replace("\n","").Replace("\r", ""),
-                           Class = dt.Rows[curRow][3].ToString().Trim().Replace("\n", "").Replace("\r", ""),
-                           Major = dt.Rows[curRow][4].ToString().Trim().Replace("\n", "").Replace("\r", ""),
-                           PoliticalStatus = dt.Rows[curRow][5].ToString().Trim().Replace("\n", "").Replace("\r", ""),
-                           Nation = dt.Rows[curRow][6].ToString().Trim().Replace("\n", "").Replace("\r", ""),
-                           Post = dt.Rows[curRow][7].ToString().Trim().Replace("\n", "").Replace("\r", ""),
-                           Address = dt.Rows[curRow][8].ToString().Trim().Replace("\n", "").Replace("\r", ""),
-                           Dorm = dt.Rows[curRow][9].ToString().Trim().Replace("\n", "").Replace("\r", ""),
-                           DormMember = dt.Rows[curRow][10].ToString().Trim().Replace("\n", "").Replace("\r", ""),
-                           Economic = dt.Rows[curRow][11].ToString().Trim().Replace("\n", "").Replace("\r", ""),
-                           BonusAndPenalty = dt.Rows[curRow][12].ToString().Trim().Replace("\n", "").Replace("\r", ""),
-                           Study = dt.Rows[curRow][13].ToString().Trim().Replace("\n", "").Replace("\r", ""),
-                           Habby = dt.Rows[curRow][14].ToString().Trim().Replace("\n", "").Replace("\r", ""),
-                           Job = dt.Rows[curRow][15].ToString().Trim().Replace("\n", "").Replace("\r", ""),
+                           Gender = dt.Rows[curRow][3].ToString().Trim().Replace("\n", "").Replace("\r", ""),
+                           Class = dt.Rows[curRow][4].ToString().Trim().Replace("\n", "").Replace("\r", ""),
+                           Major = dt.Rows[curRow][5].ToString().Trim().Replace("\n", "").Replace("\r", ""),
+                           PoliticalStatus = dt.Rows[curRow][6].ToString().Trim().Replace("\n", "").Replace("\r", ""),
+                           Nation = dt.Rows[curRow][7].ToString().Trim().Replace("\n", "").Replace("\r", ""),
+                           Post = dt.Rows[curRow][8].ToString().Trim().Replace("\n", "").Replace("\r", ""),
+                           Address = dt.Rows[curRow][9].ToString().Trim().Replace("\n", "").Replace("\r", ""),
+                           Dorm = dt.Rows[curRow][10].ToString().Trim().Replace("\n", "").Replace("\r", ""),
+                           DormMember = dt.Rows[curRow][11].ToString().Trim().Replace("\n", "").Replace("\r", ""),
+                           Economic = dt.Rows[curRow][12].ToString().Trim().Replace("\n", "").Replace("\r", ""),
+                           BonusAndPenalty = dt.Rows[curRow][13].ToString().Trim().Replace("\n", "").Replace("\r", ""),
+                           Study = dt.Rows[curRow][14].ToString().Trim().Replace("\n", "").Replace("\r", ""),
+                           Habby = dt.Rows[curRow][15].ToString().Trim().Replace("\n", "").Replace("\r", ""),
+                           Job = dt.Rows[curRow][16].ToString().Trim().Replace("\n", "").Replace("\r", ""),
                            PhotoPath = "Data/IMG/" + Major + "/" + Class + "/" + Name;
+
+                    #endregion
+
+                    #region
+                    /**
+                    string Number = dt.Rows[curRow]["学号"].ToString().Trim().Replace("\n", "").Replace("\r", ""),
+                           Gender = dt.Rows[curRow]["性别"].ToString().Trim().Replace("\n", "").Replace("\r", ""),
+                           Class = dt.Rows[curRow]["班级"].ToString().Trim().Replace("\n", "").Replace("\r", ""),
+                           Major = dt.Rows[curRow]["专业"].ToString().Trim().Replace("\n", "").Replace("\r", ""),
+                           PoliticalStatus = dt.Rows[curRow]["政治面貌"].ToString().Trim().Replace("\n", "").Replace("\r", ""),
+                           Nation = dt.Rows[curRow]["民族"].ToString().Trim().Replace("\n", "").Replace("\r", ""),
+                           Post = dt.Rows[curRow]["担任职务"].ToString().Trim().Replace("\n", "").Replace("\r", ""),
+                           Address = dt.Rows[curRow]["家庭住址"].ToString().Trim().Replace("\n", "").Replace("\r", ""),
+                           Dorm = dt.Rows[curRow]["宿舍"].ToString().Trim().Replace("\n", "").Replace("\r", ""),
+                           DormMember = dt.Rows[curRow]["宿舍成员"].ToString().Trim().Replace("\n", "").Replace("\r", ""),
+                           Economic = dt.Rows[curRow]["家庭经济状况"].ToString().Trim().Replace("\n", "").Replace("\r", ""),
+                           BonusAndPenalty = dt.Rows[curRow]["奖惩情况"].ToString().Trim().Replace("\n", "").Replace("\r", ""),
+                           Study = dt.Rows[curRow]["学习状况"].ToString().Trim().Replace("\n", "").Replace("\r", ""),
+                           Habby = dt.Rows[curRow]["兴趣爱好"].ToString().Trim().Replace("\n", "").Replace("\r", ""),
+                           Job = dt.Rows[curRow]["职业倾向"].ToString().Trim().Replace("\n", "").Replace("\r", ""),
+                           PhotoPath = "Data/IMG/" + Major + "/" + Class + "/" + Name;
+                    */
+                    #endregion
+
+
                     if (frm != null)
                     {
                         frm.Invoke((EventHandler)delegate
@@ -306,7 +334,7 @@ VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{1
                 CONN.Close();
                 return true;
             }
-            catch
+            catch(Exception e)
             {
                 input_success_total = 0;
                 return false;
@@ -747,7 +775,7 @@ VALUES('{0}', '{1}', '{2}')",
                 DataSet res = new DataSet();
                 CONN.Open();
 
-                string str_SQL_GETALLSTUDENT = @"SELECT Name, Gender, Class, Major, PoliticalStatus, Nation, Post, Address, Dorm, DormMember, Economic, BonusAndPenalty, Study, Habby FROM StudentInfo";
+                string str_SQL_GETALLSTUDENT = @"SELECT Number, Name, Gender, Class, Major, PoliticalStatus, Nation, Post, Address, Dorm, DormMember, Economic, BonusAndPenalty, Study, Habby, Job FROM StudentInfo";
                 SQLiteDataAdapter sda = new SQLiteDataAdapter(str_SQL_GETALLSTUDENT, CONN);
                 sda.Fill(res, "StudentInfo");
                 sda.Dispose();
@@ -886,7 +914,7 @@ VALUES('{0}', '{1}', '{2}')",
                     IncludeClass, Name, Major);
                 SQLiteCommand cmd = new SQLiteCommand(SQL_UPDATE, CONN);
                 cmd.ExecuteNonQuery();
-                CONN.Clone();
+                CONN.Close();
                 return true;
             }
             catch(Exception e)

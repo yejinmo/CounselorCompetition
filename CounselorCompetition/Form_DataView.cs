@@ -44,20 +44,22 @@ namespace CounselorCompetition
                 dgv_Student.AutoResizeColumns();
                 dgv_Student.DataSource = new SQLiteHelper().GetAllStudent();
                 dgv_Student.DataMember = "StudentInfo";
-                dgv_Student.Columns[0].HeaderText = "姓名";
-                dgv_Student.Columns[1].HeaderText = "性别";
-                dgv_Student.Columns[2].HeaderText = "班级";
-                dgv_Student.Columns[3].HeaderText = "专业";
-                dgv_Student.Columns[4].HeaderText = "政治面貌";
-                dgv_Student.Columns[5].HeaderText = "民族";
-                dgv_Student.Columns[6].HeaderText = "担任职务";
-                dgv_Student.Columns[7].HeaderText = "家庭住址";
-                dgv_Student.Columns[8].HeaderText = "宿舍号";
-                dgv_Student.Columns[9].HeaderText = "宿舍成员";
-                dgv_Student.Columns[10].HeaderText = "家庭经济情况";
-                dgv_Student.Columns[11].HeaderText = "奖惩情况";
-                dgv_Student.Columns[12].HeaderText = "学习情况";
-                dgv_Student.Columns[13].HeaderText = "爱好";
+                dgv_Student.Columns[0].HeaderText = "学号";
+                dgv_Student.Columns[1].HeaderText = "姓名";
+                dgv_Student.Columns[2].HeaderText = "性别";
+                dgv_Student.Columns[3].HeaderText = "班级";
+                dgv_Student.Columns[4].HeaderText = "专业";
+                dgv_Student.Columns[5].HeaderText = "政治面貌";
+                dgv_Student.Columns[6].HeaderText = "民族";
+                dgv_Student.Columns[7].HeaderText = "担任职务";
+                dgv_Student.Columns[8].HeaderText = "家庭住址";
+                dgv_Student.Columns[9].HeaderText = "宿舍号";
+                dgv_Student.Columns[10].HeaderText = "宿舍成员";
+                dgv_Student.Columns[11].HeaderText = "家庭经济情况";
+                dgv_Student.Columns[12].HeaderText = "奖惩情况";
+                dgv_Student.Columns[13].HeaderText = "学习情况";
+                dgv_Student.Columns[14].HeaderText = "爱好";
+                dgv_Student.Columns[15].HeaderText = "职业倾向";
             }
             catch { }
         }

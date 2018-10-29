@@ -7,7 +7,7 @@ using System.Windows.Forms;
 using System.Timers;
 using System.Drawing.Drawing2D;
 using CounselorCompetition.ImageAlgorithm;
-using System.Data.SQLite;
+
 
 namespace CounselorCompetition.Controls
 {

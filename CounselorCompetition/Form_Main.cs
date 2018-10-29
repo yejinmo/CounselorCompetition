@@ -39,7 +39,7 @@ namespace CounselorCompetition
         Color Color_PrimaryColor;
         Color CurrentTextColor;
         Color Color_SecondColor;
-        SQLiteHelper sqliteHelper = new SQLiteHelper();
+        //SQLiteHelper sqliteHelper = new SQLiteHelper();
         bool ControlNeedRefresh;
         int Header_Height;
         int currentSocre = 0;

@@ -21,7 +21,7 @@ namespace CounselorCompetition
 
         public Form_Config(Form frm)
         {
-            
+
             Frm_Parent = frm;
             InitializeComponent();
         }
@@ -41,7 +41,7 @@ namespace CounselorCompetition
                 radioButton2.Checked = true;
             else
                 radioButton3.Checked = true;
-            Link_Version.Text = "版本号： " + Application.ProductVersion.ToString();    
+            Link_Version.Text = "版本号： " + Application.ProductVersion.ToString();
         }
 
         private void Form_Config_FormClosed(object sender, FormClosedEventArgs e)
@@ -68,7 +68,7 @@ namespace CounselorCompetition
                 Invoke((EventHandler)delegate
                 {
                     Enabled = false;
-                    MessageBox.Show(this, "\n\n数据表格式如下且需包含表头：\n学号|姓名|性别|班级|专业|政治面貌|民族|担任职务|家庭住址|宿舍|宿舍成员|家庭经济状况|奖惩情况|学习状况|兴趣爱好\n\n不能重复导入相同的数据表\n\n", "重要提示");
+                    MessageBox.Show(this, "\n\n数据表格式如下且需包含表头：\n学号|姓名|性别|班级|专业|政治面貌|民族|担任职务|家庭住址|宿舍|宿舍成员|家庭经济状况|奖惩情况|学习状况|兴趣爱好|职业倾向\n\n不能重复导入相同的数据表\n\n", "重要提示");
                     openFile.Title = "请选择目标Excel表";
                     openFile.Filter = "Excel(*.xls;*.xlsx)|*.xls;*.xlsx";
                     openFile.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
@@ -113,7 +113,7 @@ namespace CounselorCompetition
                         (string.IsNullOrEmpty(input_success) ? "" : string.Format("以下文件的数据均已成功导入\n\n{0}", input_success)),
                         (string.IsNullOrEmpty(input_error) ? "" : string.Format("以下文件的数据导入失败，请检查格式是否有误\n\n{0}", input_error))
                         ), "导入完成");
-                    if(input_success_total > 0)
+                    if (input_success_total > 0)
                         MessageBox.Show(this, "\n\n请确保学生照片位于(程序运行目录/Data/IMG/[对应专业]/[对应年级]/[对应姓名.jpg])中\n\n如不存在，学生照片将不能正常显示", "提示");
                 });
             }
@@ -152,7 +152,7 @@ namespace CounselorCompetition
                     MessageBox.Show(this, "操作成功完成", "提示");
                 }
             }
-            catch(Exception ee)
+            catch (Exception ee)
             {
                 MessageBox.Show(this, ee.Message + "\n\n如果此错误重复出现，请尝试重新运行程序并重试此操作", "发生了一个不可预知的错误");
             }
@@ -225,23 +225,23 @@ namespace CounselorCompetition
                 //DialogResult dr = MessageBox.Show("此操作将永久性地删除不存在照片的学生信息\n\n建议已经导入所有学生信息后在进行此项操作\n\n请确认操作", "提示", messButton);
                 //if (dr == DialogResult.OK)
                 //{
-                    Text = "检测中，请耐心等候";
-                    var list = new SQLiteHelper().DeleteStudentsWithoutNoImg(this);
-                    if (list.Count > 0)
-                    {
-                        var frm = new Form_DeleteStudentsWithoutNoImg(list);
-                        frm.ShowDialog();
-                    }
-                    else
-                        MessageBox.Show(this, "操作成功完成，没有发现需要优化的学生信息\n\n", "提示");
-                    //Text = "删除中，请耐心等候";
-                    ////
-                    //var t = new SQLiteHelper().DeleteStudentsWithoutNoImg(this);
-                    ////
-                    //if (string.IsNullOrEmpty(t))
-                    //    MessageBox.Show(this, "操作成功完成，没有学生信息因不存在照片文件而被删除\n\n", "提示");
-                    //else
-                    //    MessageBox.Show(this, "操作成功完成，以下学生信息因不存在照片文件已被成功删除\n\n" + t, "提示");
+                Text = "检测中，请耐心等候";
+                var list = new SQLiteHelper().DeleteStudentsWithoutNoImg(this);
+                if (list.Count > 0)
+                {
+                    var frm = new Form_DeleteStudentsWithoutNoImg(list);
+                    frm.ShowDialog();
+                }
+                else
+                    MessageBox.Show(this, "操作成功完成，没有发现需要优化的学生信息\n\n", "提示");
+                //Text = "删除中，请耐心等候";
+                ////
+                //var t = new SQLiteHelper().DeleteStudentsWithoutNoImg(this);
+                ////
+                //if (string.IsNullOrEmpty(t))
+                //    MessageBox.Show(this, "操作成功完成，没有学生信息因不存在照片文件而被删除\n\n", "提示");
+                //else
+                //    MessageBox.Show(this, "操作成功完成，以下学生信息因不存在照片文件已被成功删除\n\n" + t, "提示");
                 //}
             }
             catch (Exception ee)
@@ -278,7 +278,7 @@ namespace CounselorCompetition
                 LoadBGImg();
                 MessageBox.Show(this, "操作成功完成", "提示");
             }
-            catch(Exception ee)
+            catch (Exception ee)
             {
                 MessageBox.Show(this, ee.Message + "\n\n如果此错误重复出现，请尝试重新运行程序并重试此操作", "发生了一个不可预知的错误");
             }
@@ -374,6 +374,7 @@ namespace CounselorCompetition
 
         private void LoadMianForm()
         {
+            List<TeacherInfoStruct> TeacherInfoList = new List<TeacherInfoStruct>();
             try
             {
                 Invoke((EventHandler)delegate
@@ -381,15 +382,9 @@ namespace CounselorCompetition
                     Text = "启动中";
                     Enabled = false;
                 });
-                List<TeacherInfoStruct> TeacherInfoList = new SQLiteHelper().GetTeacherInfoList();
-                Invoke((EventHandler)delegate
-                {
-                    Form_Main frm = new Form_Main(this, TeacherInfoList, CurrentTextColor, ComboBox_ScreenList.SelectedIndex);
-                    frm.Show();
-                    Hide();
-                });
+                TeacherInfoList = new SQLiteHelper().GetTeacherInfoList();
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Invoke((EventHandler)delegate
                 {
@@ -398,6 +393,12 @@ namespace CounselorCompetition
             }
             finally
             {
+                Invoke((EventHandler)delegate
+                {
+                    Form_Main frm = new Form_Main(this, TeacherInfoList, CurrentTextColor, ComboBox_ScreenList.SelectedIndex);
+                    frm.Show();
+                    Hide();
+                });
                 Invoke((EventHandler)delegate
                 {
                     Text = "设置";
